@@ -1,12 +1,11 @@
-
 // ═══════════════════════════════════════════════════════════════════════════
-//                    MONA LISA MINI BOT - CONFIGURATION
-// ═══════════════════════════════════════════════════════════════════════════
+//              MONA LISA MINI BOT - GUARDIAN EDITION CONFIGURATION
+// ══════════════════════════════════════════════════════════════════════════
 
 // ============================================
 // 🔥 MONA LISA BOT - COMPLETE SETTINGS
-// 👑 Developer: PROGRESS TECH
-// 🔥 GitHub Session System + All Features
+// 👑 Developer: Bagenda Nicholas
+// 🛡️ Guardian Edition + All Features
 // ============================================
 
 const fs = require('fs');
@@ -32,7 +31,7 @@ module.exports = {
      * @description Session ID for bot authentication
      * @type {string}
      */
-    SESSION_ID: process.env.SESSION_ID || "MINI BOT",
+    SESSION_ID: process.env.SESSION_ID || "GUARDIAN BOT",
 
     // ═══════════════════════════════════════════
     //  🔥 GITHUB SETTINGS (MANDATORY)
@@ -45,18 +44,18 @@ module.exports = {
     MONGODB_URI: process.env.MONGODB_URI || '',
 
     // ═══════════════════════════════════════════════════════════════════════
-    //  🤖 BOT IDENTITY
+    //   BOT IDENTITY
     // ═══════════════════════════════════════════════════════════════════════
 
-    // ── Channel Settings ──
+    // ── Channel Settings ─
     CHANNEL_IDS: [
         '120363425282620066@newsletter'
     ],
     
     REACT_EMOJIS: [
-        "🤍", "🥰", "🪸", "🖤", "💜", "💙", "💚", "💛", "🧡", "❤",
-        "💝", "⚜️", "〽️", "🍫", "🍧", "🍨", "🍷", "🥃", "😘",
-        "🤡", "🤤", "🤠", "🔥", "👑", "💯", "😍", "💖", "✨", "🎉"
+        "🤍", "🥰", "", "🖤", "💜", "💙", "💚", "💛", "🧡", "❤",
+        "", "⚜️", "〽️", "🍫", "🍧", "", "🍷", "🥃", "😘",
+        "🤡", "🤤", "🤠", "", "👑", "💯", "😍", "💖", "✨", "🎉"
     ],
     /**
      * @description Command prefix for bot interactions
@@ -74,13 +73,13 @@ module.exports = {
      * @description Display name of the bot
      * @type {string}
      */
-    BOT_NAME: process.env.BOT_NAME || '🔥🥰𝑴𝑶𝑵𝑨 𝑳𝑰𝑺𝑨 𝑽𝟐🤭🔥',
+    BOT_NAME: process.env.BOT_NAME || '🥰𝑶𝑵𝑨 𝑳𝑰𝑺𝑨 · 𝑮𝒂𝒓𝒊𝒂𝒏🤭',
 
     /**
      * @description Owner name
      * @type {string}
      */
-    OWNER_NAME: process.env.OWNER_NAME || 'PROGRESS TECH',
+    OWNER_NAME: process.env.OWNER_NAME || 'Bagenda Nicholas',
 
     /**
      * @description Owner's WhatsApp numbers (multiple owners supported)
@@ -88,7 +87,7 @@ module.exports = {
      */
     OWNER_NUMBER: process.env.OWNER_NUMBER ? 
         process.env.OWNER_NUMBER.split(',') : 
-        ['237682432296'],
+        ['2567XXXXXXXXX'], // Updated default to Uganda format
 
     /**
      * @description Who can use the .pair chat command to generate a pairing
@@ -106,7 +105,7 @@ module.exports = {
      * @description Bot footer text
      * @type {string}
      */
-    BOT_FOOTER: process.env.BOT_FOOTER || '© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Progress Tech',
+    BOT_FOOTER: process.env.BOT_FOOTER || '© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Bagenda Nicholas',
 
     // ═══════════════════════════════════════════
     //  👁️ STATUS AUTOMATION
@@ -128,7 +127,7 @@ module.exports = {
      * @description Emoji pool for auto-react feature
      * @type {string[]}
      */
-    AUTO_STATUS_EMOJIS: ['❤️', '🔥', '👑', '💯', '😍', '💖', '✨'],
+    AUTO_STATUS_EMOJIS: ['❤️', '🔥', '', '💯', '😍', '', '✨'],
 
     /**
      * @description Auto-reply to status updates
@@ -207,7 +206,7 @@ module.exports = {
      * @description Message sent when rejecting calls
      * @type {string}
      */
-    REJECT_MSG: process.env.REJECT_MSG || '📵 Call rejected by bot',
+    REJECT_MSG: process.env.REJECT_MSG || '📵 Call rejected by Guardian Bot',
 
     // ═══════════════════════════════════════════
     //  👥 GROUP MANAGEMENT
@@ -250,7 +249,7 @@ module.exports = {
     GOODBYE_MESSAGE: process.env.GOODBYE_MESSAGE || '👋 Goodbye!',
 
     // ═══════════════════════════════════════════
-    //  📢 CHANNEL SETTINGS
+    //   CHANNEL SETTINGS
     // ═══════════════════════════════════════════
 
     /**
@@ -289,9 +288,9 @@ module.exports = {
 
     /**
      * @description Emoji pool for custom reaction
-     * @type {string}
+     * @type {string[]}
      */
-    CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || '💕,👑,♥️,🇵🇰,👑,😘,❤️,🦁,☺️,💫,👍🏻,🙂',
+    CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || '💕,👑,♥️,🇺🇬,,😘,❤️,,☺️,💫,🏻,🙂',
 
     /**
      * @description Send message when unknown command is used
@@ -301,7 +300,7 @@ module.exports = {
 
     // ═══════════════════════════════════════════
     //  🖼️ MEDIA & LINKS
-    // ═══════════════════════════════════════════
+    // ══════════════════════════════════════════
 
     /**
      * @description Default bot profile image path/URL
@@ -325,16 +324,16 @@ module.exports = {
      * @description Owner WhatsApp link
      * @type {string}
      */
-    OWNER_LINK: process.env.OWNER_LINK || 'https://wa.me/237682432296',
+    OWNER_LINK: process.env.OWNER_LINK || 'https://wa.me/2567XXXXXXXXX', // Update with your number
 
     /**
      * @description Repository link
      * @type {string}
      */
-    REPO: process.env.REPO || 'https://github.com/progresstech237/MONA-LISA-Mini',
+    REPO: process.env.REPO || 'https://github.com/BagendaNicholas/MONA-LISA-Mini-Guardian',
 
     // ═══════════════════════════════════════════
-    //  🐛 DEBUG & LOGGING
+    //   DEBUG & LOGGING
     // ═══════════════════════════════════════════
 
     /**
@@ -349,7 +348,7 @@ module.exports = {
      */
     LOGGING_ENABLED: process.env.LOGGING_ENABLED || 'true',
 
-    // ═══════════════════════════════════════════
+    // ══════════════════════════════════════════
     //  📡 BAILEYS
     // ═══════════════════════════════════════════
 
@@ -401,13 +400,13 @@ module.exports = {
  */
 
 // ──────────────────────────────────────────────
-//  🏷️ EXPORT METADATA
+//  ️ EXPORT METADATA
 // ──────────────────────────────────────────────
 
 /**
  * @module settings
- * @description MONA LISA MINI Configuration Module
+ * @description MONA LISA MINI Configuration Module - Guardian Edition
  * @version 2.0.0
- * @author Progress Tech
+ * @author Bagenda Nicholas
  * @license MIT
  */
