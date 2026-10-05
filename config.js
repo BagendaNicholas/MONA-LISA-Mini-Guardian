@@ -306,7 +306,7 @@ module.exports = {
      * @description Default bot profile image path/URL
      * @type {string}
      */
-    IMAGE_PATH: process.env.IMAGE_PATH || 'https://files.catbox.moe/4dwiou.png',
+    IMAGE_PATH: process.env.IMAGE_PATH || 'https://i.postimg.cc/t4yDG3Fq/Mon-21-07-2025-16-26-06.png',
 
     /**
      * @description WhatsApp channel link for updates
@@ -324,7 +324,7 @@ module.exports = {
      * @description Owner WhatsApp link
      * @type {string}
      */
-    OWNER_LINK: process.env.OWNER_LINK || 'https://wa.me/2567XXXXXXXXX', // Update with your number
+    OWNER_LINK: process.env.OWNER_LINK || 'https://wa.me/256 743 115716', // Update with your number
 
     /**
      * @description Repository link
